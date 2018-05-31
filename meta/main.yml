@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: coaxial
+  description: Install python on a bare system so Ansible can run
+  company: 64b.it
+
+  license: license (GPLv3)
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+
+  galaxy_tags:
+    - python
+    - raw
+    - system
+
+dependencies: []

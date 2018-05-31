@@ -1,8 +1,10 @@
 raw-python Ansible role
 =========
 
+[![Build Status](https://travis-ci.org/coaxial/ansible-role-raw-python.svg?branch=master)](https://travis-ci.org/coaxial/ansible-role-raw-python)
+
 This is a role to bootstrap Ansible by installing Python with a raw command. It
-is only useful on hosts that don't have any python2 installed (i.e. Ubuntu)
+is only useful on hosts that don't have any python2 installed by default.
 
 Requirements
 ------------
@@ -24,10 +26,11 @@ Example Playbook
 
     - hosts: servers
       gather_facts: false  # necessary because it can't collect facts without
-        # python. The role collects facts after installing Python so they'll
-        # be available throughout the rest of the tasks/roles.
+      # python. The role collects facts after installing Python so they'll be
+      # available throughout the rest of the tasks/roles.
       roles:
          - coaxial.raw-python
+         - ...
 
 License
 -------
