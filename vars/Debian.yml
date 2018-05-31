@@ -1,0 +1,2 @@
+---
+rawpython__pkg_command: apt-get -y update && apt-get install -y python-minimal

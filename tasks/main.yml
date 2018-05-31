@@ -1,8 +1,17 @@
 ---
+- name: Load install command
+  include_vars: "{{ item }}"
+  with_first_found:
+    - files:
+        - "{{ rawpython__os_family }}.yml"
+        # - "{{ rawpython__os_family }}.yml"
+      paths:
+        - vars
+
 - name: Install python for ansible from scratch
   raw: >
     test -e /usr/bin/python ||
-    (apt -y update && apt install -y python-minimal)
+    ({{ rawpython__pkg_command }})
   changed_when: false
 
 - name: Collect facts

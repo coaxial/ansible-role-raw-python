@@ -11,7 +11,20 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - all
+        - 14.04
+        - 16.04
+        - 17.10
+        - 18.04
+        - latest
+    - name: Debian
+      versions:
+        - buster
+        - jessie
+        - sid
+        - stable
+        - stretch
+        - wheezy
+        - latest
 
   galaxy_tags:
     - python

@@ -14,7 +14,9 @@ None.
 Role Variables
 --------------
 
-None.
+name | purpose | possible values
+---|---|---
+`rawpython__os_family` | select the right install command | `Debian` (for Debian/Ubuntu)
 
 Dependencies
 ------------
@@ -28,6 +30,9 @@ Example Playbook
       gather_facts: false  # necessary because it can't collect facts without
       # python. The role collects facts after installing Python so they'll be
       # available throughout the rest of the tasks/roles.
+      vars:
+        rawpython__os_family: Debian  # Can't use ansible facts because of the
+        # gather_facts: false above
       roles:
          - coaxial.raw-python
          - ...

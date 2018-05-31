@@ -6,6 +6,20 @@ driver:
 lint:
   name: yamllint
 platforms:
+  - name: debianBuster
+    image: debian:buster
+  - name: debianJessie
+    image: debian:jessie
+  - name: debianLatest
+    image: debian:latest
+  - name: debianSid
+    image: debian:sid
+  - name: debianStable
+    image: debian:stable
+  - name: debianStretch
+    image: debian:stretch
+  - name: debianWheezy
+    image: debian:wheezy
   - name: ubuntu1404
     image: ubuntu:14.04
   - name: ubuntu1604
@@ -14,6 +28,8 @@ platforms:
     image: ubuntu:17.10
   - name: ubuntu1804
     image: ubuntu:18.04
+  - name: ubuntuLatest
+    image: ubuntu:latest
 provisioner:
   name: ansible
   lint:
