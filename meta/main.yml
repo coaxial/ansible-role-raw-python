@@ -11,10 +11,10 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - 14.04
-        - 16.04
-        - 17.10
-        - 18.04
+        - trusty
+        - xenial
+        - zesty
+        - bionic
         - latest
     - name: Debian
       versions:
