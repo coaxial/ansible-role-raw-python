@@ -17,6 +17,7 @@ Role Variables
 name | purpose | possible values
 ---|---|---
 `rawpython__os_family` | select the right install command | `Debian` (for Debian/Ubuntu)
+`rawpython__pkg_name` | Override the Python package name for your system (not usually necessary)
 
 Dependencies
 ------------
