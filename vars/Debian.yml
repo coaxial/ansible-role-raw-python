@@ -1,3 +1,3 @@
 ---
-rawpython__python_pkg_name: python
+rawpython__python_pkg_name: python-minimal
 rawpython__pkg_command: "apt-get -y update && apt-get install -y {{ rawpython__python_pkg_name }}"
